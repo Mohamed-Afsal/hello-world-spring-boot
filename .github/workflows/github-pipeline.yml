@@ -48,6 +48,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       # Building docker image
       - name: Building docker image
-        run: mvn jib:dockerBuild
+        run: mvn compile com.google.cloud.tools:jib-maven-plugin:3.2.0:dockerBuild
 
       
