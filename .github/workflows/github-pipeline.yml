@@ -33,6 +33,6 @@ jobs:
     steps:  
       # Building docker image
       - name: Building docker image
-        run: ../../buildjib.sh
+        run: mvn jib:dockerBuild
 
       
