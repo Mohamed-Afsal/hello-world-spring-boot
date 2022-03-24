@@ -27,7 +27,7 @@ jobs:
         run: mvn -B clean verify
       - name: Unit test
         run: mvn test
-  tests:
+  build:
     name: Building image
     runs-on: ubuntu-18.04
     steps:  
